@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,25 @@
     <title>Articles filter @alexmegadrive</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-        
-        <div class="cards-container">
-            <h2>Статьи</h2>
-            <div>
-                <input type="text" class="filter" id="filter" placeholder="Введите запрос">
-                <button>Поиск</button>
-            </div>
-        
-            <ul class="cards" id="cards">
-                <p>Loading...</p>
-            </ul>
+
+    <div class="cards-container">
+        <h2>Центральная картотека 🔍</h2>
+        <div>
+            <input type="text" class="filter" id="filter" placeholder="Введите запрос">
+            <button class="btn-filter" onclick="applyFilter()">Поиск</button>
         </div>
-        
+        <h3 id="results-title"></h3>
+        <ul class="cards" id="cards">
+            <p>Loading...</p>
+        </ul>
+    </div>
+
 
     <script src="./scripts/cardServices.js"></script>
     <script src="./scripts/htmlServices.js"></script>
     <script src="./scripts/app.js"></script>
-    <!-- <script src="./scripts/app.js"></script> -->
 </body>
+
 </html>
