@@ -1,5 +1,5 @@
-const htmlServices = new HTMLService()
-const cardServices = new cardService()
+const htmlService = new HTMLService()
+// const cardServices = new cardService()
 
 
 const cardsContainer = document.getElementById('cards')
@@ -8,12 +8,13 @@ const filterInput = document.getElementById('filter')
 
 async function startApplication() {
     // renderCart()
+    const link = 'https://jsonplaceholder.typicode.com/posts/?_start=0&_limit=7'
 
-    const response = await fetch('https://fakestoreapi.com/products')
+    const response = await fetch(link)
     const data = await response.json()
    
-    productService = new ProductService(data)
-    renderProducts(productService.products)
+    cardService = new cardService(data)
+    renderProducts(cardService.cards)
 
    
 }
@@ -21,6 +22,6 @@ async function startApplication() {
 startApplication()
 
 function renderProducts(products) {
-    productsContainer.innerHTML = htmlService.paintProducts(products)
+    cardsContainer.innerHTML = htmlService.paintProducts(products)
 }
 

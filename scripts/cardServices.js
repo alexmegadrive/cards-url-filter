@@ -1,13 +1,13 @@
 class cardService {
 
-    constructor(products=[]) {
-        this.products = products
+    constructor(cards=[]) {
+        this.cards = cards
     }
 
         filterBy(search ='') {
             if (!search.trim()) return data
-            return this.products.filter(product => {
-                return product.title.toLowerCase().includes(search.toLowerCase())
+            return this.cards.filter(card => {
+                return card.title.toLowerCase().includes(search.toLowerCase())
             })
             }
 

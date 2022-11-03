@@ -3,8 +3,35 @@
     padding: 0;
 }
 
+.container {
+    /* min-width: 930px; */
+    width: 100%;
+    /* margin: 0 auto; */
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
 .cards {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    gap: 0.5rem;
+    /* justify-content: center; */
+
+    /* gap: auto; */
+}
+
+.cards li {
+    box-sizing: border-box;
+    max-width: 300px;
+    border: 1px solid #eee;
+    padding: .5rem;
+    /* margin-right: .5rem; */
+    /* margin-bottom: .5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 5px;
 }
