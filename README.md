@@ -2,6 +2,8 @@
 
 ## Описание
 
+Deploy: https://alexmegadrive.github.io/articles-filter/
+
 + Приложение выводит данные из GET запроса на адрес https://jsonplaceholder.typicode.com/posts/?_start=0&_limit=7
 + Обрабатывается ответ и происходит отрисовка элементов массива в html.
 + К каждому элементу добавляется чекбокс.
