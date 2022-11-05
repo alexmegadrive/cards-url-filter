@@ -11,7 +11,7 @@
 body {
     background: url('./img/background.avif') no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
